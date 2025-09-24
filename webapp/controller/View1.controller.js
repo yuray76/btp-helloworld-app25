@@ -7,6 +7,7 @@ sap.ui.define([
 
     return Controller.extend("sap.btp.helloworldui5.controller.View1", {
         onInit() {
+
             // create model with settings
 			this.oModel = new JSONModel();
 			this.oModel.setData({
@@ -21,6 +22,7 @@ sap.ui.define([
 				buttonWithText:		true
 			});
 			this.getView().setModel(this.oModel);
+            
         },
         onPress: function () {
             MessageBox.alert("Hello!");
