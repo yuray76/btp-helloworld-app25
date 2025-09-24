@@ -26,12 +26,10 @@ sap.ui.define([
             MessageBox.alert("Hello!");
             this.oModel.setProperty("/badgeCurrent", 0);
         },
+        
         onPressBadgedButton: function () {
-
             var val1 = this.oModel.getProperty("/badgeCurrent");
             this.oModel.setProperty("/badgeCurrent", ++val1);
-           // console.log(val1);
-           // MessageBox.alert(val1.toString());
         }
     });
 });
